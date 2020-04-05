@@ -38,8 +38,19 @@ if (upper == true) {
      inputCharacters += numericValue;
    }
    
+//Create for loop for Random generation
+var prompts = []; 
+   
+for (i = 0; i < entry; i++) {
+  prompts.push(inputCharacters[Math.floor((Math.random() * inputCharacters.length) + 1)]);
 
-// Get references to the #generate element
+
+  alert(product);
+}
+
+};
+
+  // Get references to the #generate element
  var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
