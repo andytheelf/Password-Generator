@@ -12,6 +12,32 @@ var prompts = "";
 function generatePassword() {
   var entry = Number(window.prompt("Please choose a password length between 8-128 characters!"));
 
+//Password if statements
+if (entry > 8 || entry > 128) {
+  window.confirm("Invalid"); 
+}
+if (entry > 8 && entry < 128) {
+  console.log(entry);
+
+  (upper = window.confirm("Will this contain uppercase letters?"))
+if (upper == true) {
+  inputCharacters += upperCase;
+}
+
+(lower = window.confirm("Will this contain lowercase letters?"))
+   if (lower == true){
+     inputCharacters += lowerCase;
+   }
+   (special = window.confirm("Will this contain special characters?"))
+   if (special == true){
+     inputCharacters += specialSet;
+   }
+  
+   (numeric = window.confirm("Will this contain numbers?"))
+   if (numeric == true){
+     inputCharacters += numericValue;
+   }
+   
 
 // Get references to the #generate element
  var generateBtn = document.querySelector("#generate");
