@@ -13,7 +13,7 @@ function generatePassword() {
   var entry = Number(window.prompt("Please choose a password length between 8-128 characters!"));
 
 //Password if statements
-if (entry > 8 || entry > 128) {
+if (!entry > 8 || entry > 128) {
   window.confirm("Invalid"); 
 }
 if (entry > 8 && entry < 128) {
@@ -43,10 +43,10 @@ var prompts = [];
    
 for (i = 0; i < entry; i++) {
   prompts.push(inputCharacters[Math.floor((Math.random() * inputCharacters.length) + 1)]);
-
-
+  var product = prompts.join("");
+ }
   alert(product);
-}
+ }
 
 };
 
