@@ -8,7 +8,9 @@ var prompts = "";
   var specialSet = "@#$%^&*+<>?[]{}=~/";
   var numericValue = "0123456789";
 
- 
+  //Generate Password Function
+function generatePassword() {
+  var entry = Number(window.prompt("Please choose a password length between 8-128 characters!"));
 
 
 // Get references to the #generate element
